@@ -1,0 +1,29 @@
+.menu-position-top.menu-w.color-style-bright
+  .logo-w
+    / .filters-toggler
+    /   i.os-icon.os-icon-hamburger-menu-1
+    a.logo href="rentals_index_grid.html"
+      .logo-element
+      .logo-label terrachain
+
+  .filters
+    / .filters-header
+    /   h4 Search By
+    form.form-inline
+      .filter-w
+        .filter-body
+          / .form-group
+          /   label for="" Zip Code
+          /   .input-group
+          /     .input-group-prepend
+          /       .input-group-text
+          /         i.os-icon.os-icon-ui-74
+          /     input.form-control.zip-width placeholder="Zip Code" value="98122" type="text" /
+- show_top_bar = false
+
+- custom_menu_settings = Hash.new
+- custom_menu_settings['color_scheme'] = 'light'
+- custom_menu_settings['color_style'] = 'bright'
+- custom_menu_settings['position'] = 'top'
+- custom_menu_settings['layout'] = 'compact'
+- custom_menu_settings['with_image'] = true

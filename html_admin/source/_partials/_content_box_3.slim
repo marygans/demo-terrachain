@@ -1,0 +1,273 @@
+.row
+  .col-sm-12
+    .alert.alert-success role="alert" 
+      strong Well done! 
+      | You successfully sent your lease to your tenant.
+    .element-wrapper
+      h6.element-header At a glance
+      .element-box
+        .element-info
+          .row.align-items-center
+            .col-sm-8
+              .element-info-with-icon
+                .element-info-icon
+                  .os-icon.os-icon-wallet-loaded
+                .element-info-text
+                  h5.element-inner-header Lease Statistics
+                  .element-inner-desc Up to date info on lease income, risks, and forecasts.
+        .row
+          / .col-md-6.col-xl-4
+          /   .row
+          /     .col-sm-6.b-r.b-b
+          /       .el-tablo.centered.padded
+          /         .value 3814
+          /         .label Products Sold
+          /     .col-sm-6.b-b
+          /       .el-tablo.centered.padded
+          /         .value 47.5K
+          /         .label Followers
+          /   .row
+          /     .col-sm-6.b-r
+          /       .el-tablo.centered.padded
+          /         .value $95
+          /         .label Daily Earnings
+          /     .col-sm-6
+          /       .el-tablo.centered.padded
+          /         .value 12
+          /         .label Products
+          .col-md-6
+            .padded.b-l.b-r-xl
+              .element-info-with-icon.smaller
+                .element-info-icon
+                  .os-icon.os-icon-bar-chart-stats-up
+                .element-info-text
+                  h5.element-inner-header Overall Lease Risks
+                  .element-inner-desc 
+                  .dashboard-last-updated
+                    i.os-icon.os-icon-clock
+                    span  3 min ago
+              .os-progress-bar.blue
+                .bar-labels
+                  .bar-label-left
+                    span updated 15 min ago
+                    span.positive +10
+                  .bar-label-right
+                    span.info 5.2/10
+                .bar-level-4[style="width: 100%"]
+                  .bar-level-5[style="width: 100%"]
+                    .bar-level-7[style="width: 75%"]
+                      .bar-level-6[style="width: 85%"]
+          .col-md-6
+            .padded.b-l.b-r-xl
+              .element-info-with-icon.smaller
+                .element-info-icon
+                  .os-icon.os-icon-bar-chart-stats-up
+                .element-info-text
+                  h5.element-inner-header Risk score per tenant
+                  .element-inner-desc 
+                  .dashboard-last-updated
+                    i.os-icon.os-icon-clock
+                    span  3 min ago
+              .os-progress-bar.blue
+                .bar-labels
+                  .bar-label-left
+                    span John Mayers LLC
+                    span.positive +10
+                  .bar-label-right
+                    span.info 7.2/10
+                .bar-level-1[style="width: 100%"]
+                  .bar-level-2[style="width: 60%"]
+              .os-progress-bar.primary
+                .bar-labels
+                  .bar-label-left
+                    span Brans Law Offices
+                    span.negative .-5
+                  .bar-label-right
+                    span.info 3.2/10
+                .bar-level-1[style="width: 100%"]
+                  .bar-level-2[style="width: 20%"]
+              .os-progress-bar.primary
+                .bar-labels
+                  .bar-label-left
+                    span Howard Dental Offices
+                    span.positive +12
+                  .bar-label-right
+                    span.info 7.8/10
+                .bar-level-1[style="width: 100%"]
+                  .bar-level-2[style="width: 80%"]
+.row
+  .col-sm-4.col-lg-3
+    .element-wrapper
+      h6.element-header Occupancy Stats
+      .element-box
+        .el-chart-w
+          canvas#donutChart width="120" height="120"
+          .inside-donut-chart-label
+            strong 587,720  
+            span TOTAL SQ FT
+        .el-legend
+          .legend-value-w
+            .legend-pin style="background-color: #6896f9;"
+            .legend-value Occupied
+          .legend-value-w
+            .legend-pin style="background-color: #85c751;"
+            .legend-value Expiring soon
+          .legend-value-w
+            .legend-pin style="background-color: #d97b70;"
+            .legend-value Pending
+          .legend-value-w
+            .legend-pin style="background-color: #f2cd49;"
+            .legend-value Vacancies
+  .col-sm-8.col-lg-9
+    .element-wrapper
+      h6.element-header Tenant Payments
+      .element-box
+        .table-responsive
+          table.table.table-lightborder
+            thead
+              tr
+                th.text-center Status
+                th Tenant
+                th Lease Expires
+                th Expense Breakdown
+                th Rent Amount
+                th Rent Increase
+                th Lease risk
+                th Actions
+            tbody
+              tr
+                td.text-center 
+                  .status-pill.red data-toggle="tooltip" data-title="Overdue"
+                td.nowrap Tenant A
+                td.nowrap 5/18/2029
+                / td
+                /   .cell-image-list
+                /     .cell-img style="background-image: url(img/phone1.png)"
+                /     .cell-img-more + 5 more
+                td.nowrap 20%
+                td.text-left $6,345
+                td.text-left 1.25% (Annual)
+                td.os-progress-bar.blue
+                  .bar-level-4[style="width: 100%"]
+                    .bar-level-5[style="width: 50%"]
+                td.row-actions
+                  a href="#"
+                    i.os-icon.os-icon-phone
+                  a href="#"
+                    i.os-icon.os-icon-mail
+              tr
+                td.text-center 
+                  .status-pill.green data-toggle="tooltip" data-title="Complete"
+                td.nowrap Tenant B
+                td.nowrap 6/18/2029
+                / td
+                /   .cell-image-list
+                /     .cell-img style="background-image: url(img/portfolio14.jpg)"
+                /     .cell-img style="background-image: url(img/portfolio8.jpg)"
+                td.nowrap 20%
+                td.text-left $5,000
+                td.text-left 1.81% (Annual)
+                a[class="btn btn-secondary btn-sm" href="forms_create_lease.html"] Create a lease
+                td.row-actions
+                  a href="#"
+                    i.os-icon.os-icon-phone
+                  a href="#"
+                    i.os-icon.os-icon-mail
+              tr
+                td.text-center 
+                  .status-pill.green data-toggle="tooltip" data-title="Complete"
+                td.nowrap Tenant C
+                td.nowrap 6/18/2029
+                / td
+                /   .cell-image-list
+                /     .cell-img style="background-image: url(img/portfolio16.jpg)"
+                /     .cell-img style="background-image: url(img/portfolio14.jpg)"
+                /     .cell-img style="background-image: url(img/portfolio5.jpg)"
+                td.nowrap 10%
+                td.text-left $3,456
+                td.text-left 1.05% (Annual)
+                td.os-progress-bar.blue
+                  .bar-level-4[style="width: 100%"]
+                    .bar-level-5[style="width: 50%"]
+                td.row-actions
+                  a href="#"
+                    i.os-icon.os-icon-phone
+                  a href="#"
+                    i.os-icon.os-icon-mail
+              tr
+                td.text-center 
+                  .status-pill.yellow data-toggle="tooltip" data-title="Pending"
+                td.nowrap Tenant D
+                td.nowrap 7/18/2029
+                / td
+                /   .cell-image-list
+                /     .cell-img style="background-image: url(img/portfolio1.jpg)"
+                /     .cell-img style="background-image: url(img/portfolio5.jpg)"
+                /     .cell-img style="background-image: url(img/portfolio6.jpg)"
+                /     .cell-img-more + 2 more
+                td.nowrap 10%
+                td.text-left $5,120
+                td.text-left 1.15% (Annual)
+                td.os-progress-bar.blue
+                  .bar-level-4[style="width: 100%"]
+                    .bar-level-5[style="width: 50%"]
+                td.row-actions
+                  a href="#"
+                    i.os-icon.os-icon-phone
+                  a href="#"
+                    i.os-icon.os-icon-mail
+              tr
+                td.text-center 
+                  .status-pill.green data-toggle="tooltip" data-title="Complete"
+                td.nowrap Tenant E
+                td.nowrap 8/18/2029
+                / td
+                /   .cell-image-list
+                /     .cell-img style="background-image: url(img/portfolio9.jpg)"
+                td.nowrap 25%
+                td.text-left $4,056
+                td.text-left 1.60% (Annual)
+                td.os-progress-bar.blue
+                  .bar-level-4[style="width: 100%"]
+                    .bar-level-5[style="width: 50%"]
+                td.row-actions
+                  a href="#"
+                    i.os-icon.os-icon-phone
+                  a href="#"
+                    i.os-icon.os-icon-mail
+
+  .col-sm-6.col-lg-8.col-xl-12.col-xxl-6
+    .element-wrapper
+      h6.element-header Income Forecast
+      .element-box
+        .os-tabs-w
+          .os-tabs-controls
+            ul.nav.nav-tabs.smaller
+              li.nav-item
+                a.nav-link.active data-toggle="tab" href="#tab_overview" Overview
+              li.nav-item
+                a.nav-link data-toggle="tab" href="#tab_sales" Expenses
+            ul.nav.nav-pills.smaller.d-none.d-xl-flex
+              li.nav-item
+                a.nav-link data-toggle="tab" href="#" Today
+              li.nav-item
+                a.nav-link.active data-toggle="tab" href="#" 7 Days
+              li.nav-item
+                a.nav-link data-toggle="tab" href="#" 14 Days
+              li.nav-item
+                a.nav-link data-toggle="tab" href="#" Last Month
+
+          .tab-content
+            #tab_overview.tab-pane.active
+              .el-tablo.bigger
+                .label Current Net Revenue
+                .value $12,537
+              .el-chart-w
+                canvas#lineChart width="600px" height="150px"
+            #tab_sales.tab-pane
+            #tab_conversion.tab-pane
+  .col-sm-12.col-xxl-6
+    .element-wrapper
+      h6.element-header Recent Payments
+      .element-box-tp
+        include ../_partials/tables/_table_with_actions.slim

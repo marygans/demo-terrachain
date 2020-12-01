@@ -1,0 +1,52 @@
+#taskModal.modal.fade aria-hidden="true" role="dialog" tabindex="-1" 
+  .modal-dialog.modal-lg role="document" 
+    .modal-content
+      .modal-header.faded.smaller
+        .modal-title.text-center
+          span Commercial Lease Agreement Snapshot
+        button.close aria-label="Close" data-dismiss="modal" type="button" 
+          span aria-hidden="true"  &times;
+      .modal-body
+        form
+          .form-group
+            label for="" Lease Name
+            input.form-control placeholder="Enter task name" type="text" value="Washington Commercial Lease Agreement" /
+            .form-group
+            label for="" Description
+            textarea.form-control name="" rows="3"
+              | The lease agreement for Company apartment building in downtown Seattle.
+            .lease-snapshot
+              img src="img/lease-snapshot.png"
+          .form-group
+            label for="" Media Attached
+            .attached-media-w
+              img src="img/portfolio9.jpg"
+              img src="img/portfolio2.jpg"
+              img src="img/portfolio12.jpg"
+              a href="#" class="attach-media-btn"
+                i.os-icon.os-icon-ui-22
+                span Add Photos
+          .form-group
+            label for=""  Tenant Email
+            input.form-control placeholder="Email Address" type="email" /
+          .row
+            .col-sm-6
+              .form-group
+                label for=""  Due Date
+                .date-input
+                  input.single-daterange.form-control placeholder="Date of birth" type="text" value="04/12/1978" /
+            .col-sm-6
+              .form-group
+                label for="" Priority
+                select.form-control
+                  option High Priority
+                  option Normal Priority
+                  option Low Priority
+      .form-buttons-w.text-center
+         a.btn.btn-primary href="lease.doc" target="_blank"
+          i.os-icon.os-icon-download
+          span Download
+      .modal-footer.buttons-on-left
+        a[class="btn btn-teal" id="#submit-lease" href="layouts_menu_top_image_building.html" ] Send to tenant
+        button.btn.btn-link data-dismiss="modal" type="button"  Save for later
+        
